@@ -3,6 +3,7 @@
 This program applies a gaussian filter to a given image on the webpage.
 
 The gaussian kernel is a 2-dimensional matrix generated with the formula below and applied to the pixels of HxW image:
+
 ![gaussian filter formula](https://user-images.githubusercontent.com/70514310/175166175-3a9493f3-382a-4b77-b51e-c3911385e25c.png)
 
 where x is the distance from the origin in the horizontal axis, y is the distance from the origin in the vertical axis, and σ is the standard deviation of the Gaussian distribution.
