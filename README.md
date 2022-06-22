@@ -8,7 +8,7 @@ The gaussian kernel is a 2-dimensional matrix generated with the formula below a
 
 where x is the distance from the origin in the horizontal axis, y is the distance from the origin in the vertical axis, and σ is the standard deviation of the Gaussian distribution.
 
-The time complexity of this program is $$ O(H * W * m * n) $$. Where H and W are the image width and height and m and n are kernel width and height.
+The time complexity of this program is: $$ O(H * W * m * n) $$ Where H and W are the image width and height and m and n are kernel width and height.
 The program can be very slow depending on the image and kernel dimensions.
 
 
