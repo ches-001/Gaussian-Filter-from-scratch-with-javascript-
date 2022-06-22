@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>
+        Gaussian Filter with Javascript
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div class="container">
+        <h2 class="title">Apply Gaussian Filter</h2>
+        <hr>
+        <div class="img-div">
+            <img id="image" src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/11/Naruto-Stronger-Than-Sasuke.jpg" alt="image">
+        </div>
+        <div id="error-msg"></div>
+        <button class="btn btn-primary" id="blur-btn">blur</button>
+        <span>Filter width: </span> <input id="k_width" , type="number" , value="5">
+        <span>Filter height: </span> <input id="k_height" , type="number" , value="5">
+        <span>Filter sigma: </span> <input id="sigma" , type="number" , value="1">
+    </div>
+
+
+    <div id="canvasdiv"></div>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
