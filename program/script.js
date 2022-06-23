@@ -5,7 +5,6 @@ image.crossOrigin = 'anonymous';
 
 window.onload = function() {
     blur_btn.addEventListener('click', function() {
-        console.log('loaded')
         let w = image.width;
         let h = image.height;
 
@@ -63,7 +62,10 @@ function apply_gaussian_blur(PX, image_size, kernel_size, sigma) {
 
                 x_offset = k - Math.floor(k_w / 2);
                 y_offset = j - Math.floor(k_w / 2);
-                weighted_sum += gaussian_filter[ck_idx] * (PX[i + ((img_w * 4 * y_offset) + x_offset)] || PX[i]);
+                weighted_sum += gaussian_filter[ck_idx] * (
+                    PX[i + ((img_w * 4 * y_offset) + x_offset)] ||
+                    PX[i - ((img_w * 4 * y_offset) - x_offset)]
+                );
             }
         }
         let gaussian_sum = gaussian_filter.reduce((a, b) => a + b, 0)
