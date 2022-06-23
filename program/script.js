@@ -64,7 +64,7 @@ function apply_gaussian_blur(PX, image_size, kernel_size, sigma) {
                 y_offset = j - Math.floor(k_w / 2);
                 weighted_sum += gaussian_filter[ck_idx] * (
                     PX[i + ((img_w * 4 * y_offset) + x_offset)] ||
-                    PX[i - ((img_w * 4 * y_offset) - x_offset)]
+                    PX[i - ((img_w * 4 * y_offset) - x_offset)] || PX[i]
                 );
             }
         }

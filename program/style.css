@@ -1,13 +1,23 @@
 .container {
-    width: 50em;
+    padding: 1em;
+    width: 40em;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.container .title {
+    color: aquamarine;
+    text-align: center;
 }
 
 .container span {
+    color: bisque;
     margin-left: 1em;
 }
 
 .container input {
     width: 5em;
+    border: none;
+    border-radius: 0.4em;
 }
 
 .container #error-msg p {
@@ -29,11 +39,12 @@
     margin-top: 1em;
     padding: 0.5em;
     border-radius: 0.2em;
-    width: 8em;
+    width: 7em;
 }
 
 .btn:hover {
-    width: 10em;
+    cursor: pointer;
+    width: 8.5em;
 }
 
 .btn-primary {
