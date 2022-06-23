@@ -14,5 +14,6 @@ The program can be very slow depending on the image and kernel dimensions.
 
 ### Demo Video:
 
-https://user-images.githubusercontent.com/70514310/175165104-0709a310-ea4c-41ec-823e-e435b3476de8.mp4
+https://user-images.githubusercontent.com/70514310/175408033-bfaee907-367a-4843-8804-e4806062ae99.mp4
+
 
